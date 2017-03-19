@@ -27,6 +27,8 @@ const middleware = koaWebpack({
   hot: hotMiddlewareConfig
 })
 
+app.use(middleware);
+
 app.use(logger());
 
 routes(app);

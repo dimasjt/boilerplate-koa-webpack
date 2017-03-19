@@ -4,7 +4,6 @@ const path = require('path');
 const isDev = process.env.NODE_ENV == 'development';
 
 const webpackConfig = {
-  devtool: isDev ? 'source-map' : '',
   entry: [
     'webpack-hot-middleware/client',
     './app/components/App.jsx'
@@ -20,7 +19,7 @@ const webpackConfig = {
     extensions: ['.js', '.jsx']
   },
   output: {
-    path: __dirname + '/public/assets',
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   plugins: [
