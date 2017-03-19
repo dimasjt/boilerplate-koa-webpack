@@ -11,7 +11,7 @@ const pug = new Pug({
   pretty: true,
   compileDebug: false,
   app: app
-})
+});
 
 app.use(logger());
 
