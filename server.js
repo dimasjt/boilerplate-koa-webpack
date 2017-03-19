@@ -7,6 +7,7 @@ const compress = require('koa-compress');
 
 const app = new Koa();
 const routes = require('./config/routes.js');
+const webpackConfig = require('./webpack.config.js');
 
 const pug = new Pug({
   viewPath: './app/views',
