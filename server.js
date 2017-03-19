@@ -31,7 +31,6 @@ app.use(logger());
 
 routes(app);
 
-app.use(serve(path.join(__dirname, 'public')));
 app.use(compress());
 
 app.listen(3000)

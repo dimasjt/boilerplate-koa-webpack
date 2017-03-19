@@ -6,6 +6,7 @@ const isDev = process.env.NODE_ENV == 'development';
 const webpackConfig = {
   devtool: isDev ? 'source-map' : '',
   entry: [
+    'webpack-hot-middleware/client',
     './app/components/App.jsx'
   ],
   module: {
@@ -19,7 +20,7 @@ const webpackConfig = {
     extensions: ['.js', '.jsx']
   },
   output: {
-    path: '/dist',
+    path: __dirname + '/public/assets',
     filename: 'bundle.js'
   },
   plugins: [
@@ -36,7 +37,7 @@ const devMiddlewareConfig = {
     aggregateTimeout: 300,
     poll: true
   },
-  publicPath: "/assets/",
+  publicPath: "/public",
   stats: {
     colors: true
   }
