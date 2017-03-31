@@ -1,0 +1,45 @@
+{
+  "name": "boilerplate-koa-webpack",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "author": "Dimas J. Taniawan",
+  "homepage": "https://github.com/dimasjt/boilerplate-koa-webpack",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "next",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "concurrently": "^3.4.0",
+    "koa": "^2.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-logger": "^2.0.1",
+    "koa-pug": "^3.0.0-2",
+    "koa-router": "^7.1.0",
+    "koa-static": "^3.0.0",
+    "mongoose": "^4.9.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "react-router-config": "^1.0.0-beta.1",
+    "react-router-dom": "^4.0.0",
+    "react-router-redux": "^4.0.8",
+    "reactcss": "^1.2.2",
+    "redux": "^3.6.0",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.2.2",
+    "koa-webpack": "^0.3.1",
+    "react-hot-loader": "^1.3.1",
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-hot-middleware": "^2.17.1"
+  }
+}
