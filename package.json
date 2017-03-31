@@ -1,10 +1,18 @@
 {
   "name": "boilerplate-koa-webpack",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "server/dev.js",
   "license": "MIT",
   "author": "Dimas J. Taniawan",
   "homepage": "https://github.com/dimasjt/boilerplate-koa-webpack",
+  "bugs": {
+    "url": "https://github.com/dimasjt/boilerplate-koa-webpack/issues",
+    "email": "hello@dimasjt.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimasjt/boilerplate-koa-webpack"
+  },
   "scripts": {
     "dev": "./node_modules/.bin/nodemon --harmony server/dev.js --exec babel-node --presets latest",
     "eslint": "./node_modules/.bin/eslint ."
