@@ -1,31 +1,31 @@
-const webpack = require('webpack');
-const path = require('path');
+import webpack from 'webpack'
+import path from 'path'
 
-const isDev = process.env.NODE_ENV == 'development';
+// const isDev = process.env.NODE_ENV == 'development';
 
 const webpackConfig = {
   entry: [
     'webpack-hot-middleware/client',
-    './app/components/App.jsx'
+    './app/components/App.jsx',
   ],
   module: {
     loaders: [{
       test: /\.jsx?/,
       exclude: /node_modules/,
-      loaders: ['react-hot-loader', 'babel-loader']
-    }]
+      loaders: ['react-hot-loader', 'babel-loader'],
+    }],
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ]
+    new webpack.NoEmitOnErrorsPlugin(),
+  ],
 };
 
 const devMiddlewareConfig = {
@@ -34,18 +34,18 @@ const devMiddlewareConfig = {
   lazy: false,
   watchOptions: {
     aggregateTimeout: 300,
-    poll: true
+    poll: true,
   },
-  publicPath: "/public",
+  publicPath: '/public',
   stats: {
-    colors: true
-  }
+    colors: true,
+  },
 }
 
 const hotMiddlewareConfig = {}
 
 module.exports = {
-  webpackConfig: webpackConfig,
-  devMiddlewareConfig: devMiddlewareConfig,
-  hotMiddlewareConfig: hotMiddlewareConfig
+  webpackConfig,
+  devMiddlewareConfig,
+  hotMiddlewareConfig,
 }

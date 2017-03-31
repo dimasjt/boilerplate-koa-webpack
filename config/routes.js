@@ -1,10 +1,10 @@
-const Router = require('koa-router');
+const Router = require('koa-router')
 
-var router = new Router();
+const router = new Router()
 
-var routes = function(app) {
-  router.get('/', (ctx, next) => {
-    ctx.render('index');
+const routes = (app) => {
+  router.get('/', (ctx) => {
+    ctx.render('index')
   })
 
   app.use(router.routes())
