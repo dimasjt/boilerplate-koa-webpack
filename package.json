@@ -15,6 +15,7 @@
   },
   "scripts": {
     "dev": "./node_modules/.bin/nodemon --harmony server/dev.js --exec babel-node --presets latest",
+    "build:dev": "webpack --env=development --progress --profile --colors",
     "eslint": "./node_modules/.bin/eslint ."
   },
   "engines": {
@@ -32,6 +33,7 @@
     "mongoose": "^4.9.0",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",
+    "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "react-router": "^4.0.0",
@@ -49,11 +51,14 @@
     "babel-preset-env": "^1.2.2",
     "babel-preset-latest": "^6.24.0",
     "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "css-loader": "^0.28.0",
     "eslint": "^3.18.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "extract-text-webpack-plugin": "^2.1.0",
     "react-hot-loader": "^1.3.1",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-dev-server": "^2.4.2",
